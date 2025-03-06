@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  gap: 5px;
+}
+.btn {
+  background-color: lightgray;
+  padding: 10px;
+
+  border: 1px solid #545553;
+  border-radius: 5px;
+
+  outline: none;
+}
+.btn:hover,
+.btn:focus {
+  border: 1px solid chocolate;
+  background-color: rgb(182, 243, 84);
+  outline: none;
+}
