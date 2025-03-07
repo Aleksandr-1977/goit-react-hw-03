@@ -2,7 +2,7 @@ import css from './Contacts.module.css';
 import { FcBusinessman } from 'react-icons/fc';
 import { FcPhone } from 'react-icons/fc';
 
-const Contacts = ({ data: { name, number } }) => {
+const Contacts = ({ data: { id, name, number }, delContact }) => {
   return (
     <>
       <div className={css.text}>
@@ -16,7 +16,7 @@ const Contacts = ({ data: { name, number } }) => {
         </p>
       </div>
 
-      <button type="button" className={css.btn}>
+      <button type="button" className={css.btn} onClick={() => delContact(id)}>
         Delete
       </button>
     </>

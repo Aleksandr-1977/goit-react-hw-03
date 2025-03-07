@@ -11,11 +11,12 @@
 }
 .btn {
   width: 60px;
-  height: 40px;
+  height: 30px;
   border-radius: 5px;
   border: 1px solid lightblue;
   background-color: lightgray;
   padding: 5px;
+  cursor: pointer;
   outline: none;
 }
 .btn:hover,
