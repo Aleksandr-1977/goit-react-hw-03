@@ -1,12 +1,25 @@
 import css from './Contacts.module.css';
+import { FcBusinessman } from 'react-icons/fc';
+import { FcPhone } from 'react-icons/fc';
 
-const Contacts = ({ contact: { name, number } }) => {
+const Contacts = ({ data: { name, number } }) => {
   return (
-    <div>
-      <p>{name}</p>
-      <p>{number}</p>
-      <button type="button">Delete</button>
-    </div>
+    <>
+      <div className={css.text}>
+        <p className={css.textItem}>
+          <FcBusinessman size="20" />
+          {name}
+        </p>
+        <p className={css.textItem}>
+          <FcPhone size="20" />
+          {number}
+        </p>
+      </div>
+
+      <button type="button" className={css.btn}>
+        Delete
+      </button>
+    </>
   );
 };
 export default Contacts;

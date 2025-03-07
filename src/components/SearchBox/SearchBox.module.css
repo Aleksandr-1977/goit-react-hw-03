@@ -1,9 +1,13 @@
 .container {
+  display: flex;
+  flex-direction: column;
   text-align: left;
+  margin-bottom: 10px;
 }
-.text {
-  margin-bottom: 0;
-  margin-top: 5px;
-  font-weight: 600;
-  font-size: 15px;
+.input {
+  border-radius: 5px;
+  border: 1px solid rgb(26, 25, 25);
+  height: 30px;
+  font-size: medium;
+  outline: none;
 }

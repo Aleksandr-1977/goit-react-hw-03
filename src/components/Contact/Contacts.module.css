@@ -1,6 +1,26 @@
 .text {
-  text-align: left;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+.textItem {
+  display: flex;
+  text-align: center;
+  gap: 5px;
+}
+.btn {
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  background-color: lightgray;
+  padding: 5px;
+  outline: none;
+}
+.btn:hover,
+.btn:focus {
+  border: 1px solid chocolate;
+  background-color: rgb(182, 243, 84);
+  outline: none;
 }
